@@ -1,0 +1,48 @@
+<!--<div class="container">
+  <router-outlet></router-outlet>
+</div>-->
+
+<div class="columns">
+
+  <div class="column is-2 m-5 box is-fixed-top sideMenu">
+    <ul>
+      <li class="subtitle mb-1"><a href="#MobileApplications">Mobile Applications</a></li>
+      <li class="subtitle mb-1"><a href="#WebApplications">Telegram Bots</a></li>
+      <li class="subtitle mb-1"><a href="#BotApplications">Websites</a></li>
+    </ul>
+  </div>
+
+  <div class="column pt-5 portfolioBody">
+
+    <a id="MobileApplications"></a>
+    <ng-container *ngIf="mobilePortfolios">
+      <p class="title">Mobile Applications</p>
+      <hr>
+      <div *ngFor="let mobileApp of mobilePortfolios">
+        <app-portfolio-card [portfolio]="mobileApp"></app-portfolio-card>
+      </div>
+    </ng-container>
+
+    <a id="WebApplications"></a>
+    <ng-container *ngIf="websitePortfolios">
+      <p class="mt-6 mb-5 title">Websites</p>
+      <hr>
+      <div *ngFor="let web of websitePortfolios">
+        <app-portfolio-card [portfolio]="web"></app-portfolio-card>
+      </div>
+    </ng-container>
+
+    <a id="BotApplications"></a>
+    <ng-container *ngIf="telegramBotsPortfolios">
+      <p class="mt-6 mb-5 title">Telegram Bots</p>
+      <hr>
+      <div *ngFor="let bot of telegramBotsPortfolios">
+        <app-portfolio-card [portfolio]="bot"></app-portfolio-card>
+      </div>
+    </ng-container>
+
+
+  </div>
+
+</div>
+

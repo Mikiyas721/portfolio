@@ -1,0 +1,44 @@
+.picture {
+  width: 250px;
+}
+
+.cardLabel {
+  font-family: Montserrat;
+  font-size: 25px;
+
+}
+
+.cardContent {
+  font-family: Poppins;
+}
+
+.cardContentGroup {
+  margin-left: 15px;
+}
+
+#frameworkLabel {
+  font-family: "Harlow Solid Italic";
+
+}
+
+#framework {
+  margin-left: 10px;
+  font-family: "ItalicT";
+}
+.navbar{
+  background-color: #06291B;
+  color: white;
+}
+.bottomNavBarContent{
+  margin: 0 100px 0 100px;
+  padding: 10px 0 30px 0;
+}
+.myTitle{
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 25px 0 25px 0;
+}
+.paragraph{
+  font-family: Montserrat;
+}

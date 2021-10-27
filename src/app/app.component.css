@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #2FBE84;
+  height: 80px;
+  padding: 0 100px 0 100px;
+  color: white;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 100px;
+  height: 60px;
+}
+
+.title {
+  color: white;
+  margin: 5px;
+
+}
+.routes {
+  width: 300px;
+}
+
+.navBarLink {
+  color: white;
+  margin-right: 20px;
+}
+
+
