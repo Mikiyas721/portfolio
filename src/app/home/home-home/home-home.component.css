@@ -17,28 +17,38 @@
 }
 
 #frameworkLabel {
-  font-family: "Harlow Solid Italic";
-
+  font-family: Montserrat;
+  font-style: italic;
 }
 
 #framework {
   margin-left: 10px;
-  font-family: "ItalicT";
+  font-family: Poppins;
+  font-style: italic;
 }
-.navbar{
+
+.navbar {
   background-color: #06291B;
   color: white;
 }
-.bottomNavBarContent{
+
+.bottomNavBarContent {
   margin: 0 100px 0 100px;
-  padding: 10px 0 30px 0;
+  padding: 10px 0 80px 0;
 }
-.myTitle{
+
+.myTitle {
   font-family: Montserrat;
   font-size: 25px;
   font-weight: bold;
   margin: 25px 0 25px 0;
 }
-.paragraph{
+
+.paragraph {
   font-family: Montserrat;
+}
+
+.material-icons {
+  color: #A0A0A0;
+
 }

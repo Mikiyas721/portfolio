@@ -2,7 +2,7 @@
 
   <div
     class="card mb-5"
-    (click)="onClick()"
+    (click)="onCardClick()"
     routerLink="./portfolioDetails"
   >
 
@@ -14,8 +14,7 @@
     </div>
 
     <div class="card-content">
-      <p class="cardContent">{{portfolio.content.description}}
-      </p>
+      <p>{{portfolio.content.description}}</p>
 
       <div class="m-2">
         <p class="subtitle mb-1">Applications</p>
@@ -41,10 +40,26 @@
         </ng-container>
       </div>
 
-
     </div>
-    <div class="card-footer is-justify-content-end pr-5" *ngIf="portfolio.downloadLink">
-      <button class="button"><i class="fa fa-train"></i>Download APK</button>
+
+    <div
+      class="card-footer is-justify-content-space-between pl-5 pr-5 pb-1"
+      *ngIf="portfolio.downloadLink||portfolio.frameWorksLogo"
+    >
+      <div>
+        <ng-container *ngFor="let logo of portfolio.frameWorksLogo">
+          <img style="width:48px" class="mr-1" [src]="logo">
+        </ng-container>
+      </div>
+
+      <button
+        (click)="downloadFile()"
+        class="button"
+        *ngIf="portfolio.downloadLink"
+      >
+        <i class="fa fa-train"></i>
+        Download APK
+      </button>
     </div>
   </div>
 </div>

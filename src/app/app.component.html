@@ -5,13 +5,13 @@
   </figure>-->
 
   <div class="title">
-    <p>Basic Information</p>
+    <p>{{getTitle()}}</p>
   </div>
 
   <div class="ui secondary pointing menu" style="margin-top: 15px">
-    <a class="item navBarLink" (click)="active=0" [class]="{'is-underlined':active===0}" routerLink="">Home</a>
-    <a class="item navBarLink" (click)="active=1" [class]="{'is-underlined':active===1}" routerLink="portfolio">Portfolio</a>
-    <a class="item navBarLink" (click)="active=2" [class]="{'is-underlined':active===2}" routerLink="resume">Resume</a>
+    <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===0}" routerLink="">Home</a>
+    <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===1}" routerLink="portfolio">Portfolio</a>
+    <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===2}" routerLink="resume">Resume</a>
   </div>
 
 </nav>

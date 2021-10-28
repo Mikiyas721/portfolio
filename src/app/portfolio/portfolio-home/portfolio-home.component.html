@@ -1,14 +1,14 @@
-<div class="container" *ngIf="selectedPortfolio">
-  <router-outlet></router-outlet>
+<div class="container" *ngIf="sharedService.selectedPortfolio">
+  <router-outlet (deactivate)="sharedService.selectedPortfolio=null"></router-outlet>
 </div>
 
-<div class="columns" *ngIf="!selectedPortfolio">
+<div class="columns" *ngIf="!sharedService.selectedPortfolio">
 
   <div class="column is-2 m-5 box is-fixed-top sideMenu">
     <ul>
-      <li class="subtitle mb-1"><a href="#MobileApplications">Mobile Applications</a></li>
-      <li class="subtitle mb-1"><a href="#WebApplications">Telegram Bots</a></li>
-      <li class="subtitle mb-1"><a href="#BotApplications">Websites</a></li>
+      <li class="subtitle mb-1"><a href="./portfolio/#MobileApplications">Mobile Applications</a></li>
+      <li class="subtitle mb-1"><a href="./portfolio/#WebApplications">Websites</a></li>
+      <li class="subtitle mb-1"><a href="./portfolio/#BotApplications">Telegram Bots</a></li>
     </ul>
   </div>
 
@@ -19,7 +19,8 @@
       <p class="title">Mobile Applications</p>
       <hr>
       <div *ngFor="let mobileApp of mobilePortfolios">
-        <app-portfolio-card (onCardClick)="onPortfolioCardClick(mobileApp)" [portfolio]="mobileApp"></app-portfolio-card>
+        <app-portfolio-card (onCardClick)="onPortfolioCardClick(mobileApp)"
+                            [portfolio]="mobileApp"></app-portfolio-card>
       </div>
     </ng-container>
 

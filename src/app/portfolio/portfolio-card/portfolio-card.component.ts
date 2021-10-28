@@ -15,8 +15,16 @@ export class PortfolioCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick() {
+  onCardClick() {
     this.eventEmitter.emit()
+  }
+
+  downloadFile(){
+    window.event?.stopPropagation()
+    let link = document.createElement("a");
+    link.download = this.portfolio.downloadLink.title;
+    link.href = this.portfolio.downloadLink.url;
+    link.click();
   }
 
 }

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {SharedService} from "../../shared/shared.service";
 
 @Component({
   selector: 'app-portfolio-home',
@@ -29,7 +30,12 @@ export class PortfolioHomeComponent implements OnInit {
           'Domain Driven Design'
         ]
       },
-      downloadLink: 'fghjk',
+      downloadLink: {title: 'Sales Tracker', url: '/assets/images/1/1.jpg'},
+      frameWorksLogo: [
+        'assets/logos/flutter.png',
+        'assets/logos/dart.png',
+        'assets/logos/node.png',
+      ],
       carouselImages: [
         'assets/images/1/1.png',
         'assets/images/1/2.png',
@@ -53,7 +59,19 @@ export class PortfolioHomeComponent implements OnInit {
           'Domain Driven Design'
         ]
       },
-      downloadLink: 'ghj'
+      downloadLink: {title: 'Rick and Morty', url: '/assets/images/1/2.jpg'},
+      frameWorksLogo: [
+        'assets/logos/flutter.png',
+        'assets/logos/node.png',
+      ],
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
     },
     {
       title: "Sales Tracker",
@@ -69,8 +87,20 @@ export class PortfolioHomeComponent implements OnInit {
           'Domain Driven Design'
         ]
       },
-      downloadLink: 'k'
-    }, {
+      downloadLink: {title: 'Share Recipe', url: '/assets/images/1/3.jpg'},
+      frameWorksLogo: [
+        'assets/logos/flutter.png'
+      ],
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
+    },
+    {
       title: "Sales Tracker",
       githubLink: "https://github.com/Mikiyas721/abc",
       content: {
@@ -84,8 +114,21 @@ export class PortfolioHomeComponent implements OnInit {
           'Domain Driven Design'
         ]
       },
-      downloadLink: 'tyui'
-    }, {
+      downloadLink: {title: 'Todo', url: '/assets/images/1/4.jpg'},
+      frameWorksLogo: [
+        'assets/logos/flutter.png',
+        'assets/logos/node.png',
+      ],
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
+    },
+    {
       title: "Sales Tracker",
       githubLink: "https://github.com/Mikiyas721/abc",
       content: {
@@ -99,13 +142,25 @@ export class PortfolioHomeComponent implements OnInit {
           'Domain Driven Design'
         ]
       },
-      downloadLink: 'yty'
+      downloadLink: {title: 'Chess', url: '/assets/images/1/5.jpg'},
+      frameWorksLogo: [
+        'assets/logos/flutter.png',
+        'assets/logos/node.png',
+      ],
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
     }
   ]
 
   websitePortfolios = [
     {
-      title: "Sales Tracker",
+      title: "Tolodelivery LandingPage",
       githubLink: "https://github.com/Mikiyas721/abc",
       content: {
         description: this.descriptionSample,
@@ -116,8 +171,20 @@ export class PortfolioHomeComponent implements OnInit {
         ],
         designPatterns: [
           'Domain Driven Design'
-        ]
-      }
+        ],
+      },
+      frameWorksLogo: [
+        'assets/logos/node.png',
+        'assets/logos/vue.png',
+      ],
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
     },
     {
       title: "Sales Tracker",
@@ -132,7 +199,19 @@ export class PortfolioHomeComponent implements OnInit {
         designPatterns: [
           'Domain Driven Design'
         ]
-      }
+      },
+      frameWorksLogo: [
+        'assets/logos/flutter.png',
+        'assets/logos/node.png',
+      ],
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
     }
   ]
 
@@ -150,7 +229,19 @@ export class PortfolioHomeComponent implements OnInit {
         designPatterns: [
           'Domain Driven Design'
         ]
-      }
+      },
+      frameWorksLogo: [
+        'assets/logos/flutter.png',
+        'assets/logos/node.png',
+      ],
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
     },
     {
       title: "Sales Tracker",
@@ -165,18 +256,32 @@ export class PortfolioHomeComponent implements OnInit {
         designPatterns: [
           'Domain Driven Design'
         ]
-      }
+      },
+      frameWorksLogo: [
+        'assets/logos/node.png',
+        'assets/logos/mysql.png',
+
+      ],
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
     }
   ]
-  selectedPortfolio: any
 
-  constructor() {
+  constructor(public sharedService: SharedService) {
   }
 
   ngOnInit(): void {
+
   }
-  onPortfolioCardClick(object:any){
-    this.selectedPortfolio = object
+
+  onPortfolioCardClick(object: any) {
+    this.sharedService.selectedPortfolio = object
   }
 
 

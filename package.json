@@ -21,6 +21,7 @@
     "bootstrap": "^5.1.3",
     "bulma": "^0.9.3",
     "bulma-carousel": "^4.0.24",
+    "material-icons": "^1.10.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
