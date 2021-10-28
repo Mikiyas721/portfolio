@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-portfolio-card',
@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PortfolioCardComponent implements OnInit {
   @Input() portfolio:any
+  @Output('onCardClick') eventEmitter = new EventEmitter()
 
   constructor() {
   }
@@ -15,7 +16,7 @@ export class PortfolioCardComponent implements OnInit {
   }
 
   onClick() {
-    console.log("Rsfkvjsnfv")
+    this.eventEmitter.emit()
   }
 
 }

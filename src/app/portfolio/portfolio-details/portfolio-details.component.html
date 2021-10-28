@@ -1,1 +1,15 @@
-<p>Details in this page</p>
+<div class="container">
+
+  <div id="detailsCarousel" class="carousel">
+    <div *ngFor="let item of data" class="carousel-item">
+      <img [src]="item.carouselImages" alt="">
+    </div>
+  </div>
+
+  <div><p class="myTitle">In-use</p></div>
+
+  <div class="m-6">
+    <img class="picture" style="margin-left: 35%" src="/assets/images/giphy.webp">
+  </div>
+
+</div>

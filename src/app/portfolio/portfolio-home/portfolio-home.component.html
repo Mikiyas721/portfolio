@@ -1,8 +1,8 @@
-<!--<div class="container">
+<div class="container" *ngIf="selectedPortfolio">
   <router-outlet></router-outlet>
-</div>-->
+</div>
 
-<div class="columns">
+<div class="columns" *ngIf="!selectedPortfolio">
 
   <div class="column is-2 m-5 box is-fixed-top sideMenu">
     <ul>
@@ -19,7 +19,7 @@
       <p class="title">Mobile Applications</p>
       <hr>
       <div *ngFor="let mobileApp of mobilePortfolios">
-        <app-portfolio-card [portfolio]="mobileApp"></app-portfolio-card>
+        <app-portfolio-card (onCardClick)="onPortfolioCardClick(mobileApp)" [portfolio]="mobileApp"></app-portfolio-card>
       </div>
     </ng-container>
 
@@ -28,7 +28,7 @@
       <p class="mt-6 mb-5 title">Websites</p>
       <hr>
       <div *ngFor="let web of websitePortfolios">
-        <app-portfolio-card [portfolio]="web"></app-portfolio-card>
+        <app-portfolio-card (onCardClick)="onPortfolioCardClick(web)" [portfolio]="web"></app-portfolio-card>
       </div>
     </ng-container>
 
@@ -37,10 +37,9 @@
       <p class="mt-6 mb-5 title">Telegram Bots</p>
       <hr>
       <div *ngFor="let bot of telegramBotsPortfolios">
-        <app-portfolio-card [portfolio]="bot"></app-portfolio-card>
+        <app-portfolio-card (onCardClick)="onPortfolioCardClick(bot)" [portfolio]="bot"></app-portfolio-card>
       </div>
     </ng-container>
-
 
   </div>
 

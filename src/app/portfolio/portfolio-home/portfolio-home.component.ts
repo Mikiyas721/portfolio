@@ -29,7 +29,15 @@ export class PortfolioHomeComponent implements OnInit {
           'Domain Driven Design'
         ]
       },
-      downloadLink: 'fghjk'
+      downloadLink: 'fghjk',
+      carouselImages: [
+        'assets/images/1/1.png',
+        'assets/images/1/2.png',
+        'assets/images/1/3.png',
+        'assets/images/1/4.png',
+        'assets/images/1/5.png',
+        'assets/images/1/6.png',
+      ]
     },
     {
       title: "Sales Tracker",
@@ -160,11 +168,15 @@ export class PortfolioHomeComponent implements OnInit {
       }
     }
   ]
+  selectedPortfolio: any
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+  onPortfolioCardClick(object:any){
+    this.selectedPortfolio = object
   }
 
 
