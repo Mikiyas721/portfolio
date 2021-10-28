@@ -37,12 +37,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/node.png',
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/images/1/1.jpg',
+        'assets/images/1/2.jpg',
+        'assets/images/1/3.jpg',
+        'assets/images/1/4.jpg',
+        'assets/images/1/5.jpg',
+        'assets/images/1/6.jpg',
       ]
     },
     {
@@ -65,12 +65,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/node.png',
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/images/1/1.jpg',
+        'assets/images/1/2.jpg',
+        'assets/images/1/3.jpg',
+        'assets/images/1/4.jpg',
+        'assets/images/1/5.jpg',
+        'assets/images/1/6.jpg',
       ]
     },
     {
@@ -92,12 +92,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/flutter.png'
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/images/1/1.jpg',
+        'assets/images/1/2.jpg',
+        'assets/images/1/3.jpg',
+        'assets/images/1/4.jpg',
+        'assets/images/1/5.jpg',
+        'assets/images/1/6.jpg',
       ]
     },
     {
@@ -120,12 +120,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/node.png',
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/images/1/1.jpg',
+        'assets/images/1/2.jpg',
+        'assets/images/1/3.jpg',
+        'assets/images/1/4.jpg',
+        'assets/images/1/5.jpg',
+        'assets/images/1/6.jpg',
       ]
     },
     {

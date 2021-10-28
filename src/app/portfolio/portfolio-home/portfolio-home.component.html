@@ -2,7 +2,7 @@
   <router-outlet (deactivate)="sharedService.selectedPortfolio=null"></router-outlet>
 </div>
 
-<div class="columns" *ngIf="!sharedService.selectedPortfolio">
+<div class="columns px-5" *ngIf="!sharedService.selectedPortfolio">
 
   <div class="column is-2 m-5 box is-fixed-top sideMenu">
     <ul>

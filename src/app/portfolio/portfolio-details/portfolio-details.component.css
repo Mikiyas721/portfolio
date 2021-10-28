@@ -4,3 +4,9 @@
   font-weight: bold;
   margin: 25px 0 25px 0;
 }
+.gitLink{
+  width: 151px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

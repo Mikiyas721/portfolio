@@ -5,10 +5,10 @@
   </figure>-->
 
   <div class="title">
-    <p>{{getTitle()}}</p>
+    <p class="truncated">{{getTitle()}}</p>
   </div>
 
-  <div class="ui secondary pointing menu" style="margin-top: 15px">
+  <div class="ui secondary pointing menu">
     <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===0}" routerLink="">Home</a>
     <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===1}" routerLink="portfolio">Portfolio</a>
     <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===2}" routerLink="resume">Resume</a>

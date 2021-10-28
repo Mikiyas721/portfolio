@@ -1,7 +1,7 @@
 .navbar {
   background-color: #2FBE84;
   height: 80px;
-  padding: 0 100px 0 100px;
+  padding: 5px 100px 0 100px;
   color: white;
   align-items: center;
 }
@@ -13,7 +13,7 @@
 
 .title {
   color: white;
-  margin: 5px;
+  margin: 0 0 5px 0;
 
 }
 .routes {
@@ -25,4 +25,9 @@
   margin-right: 20px;
 }
 
-
+.truncated {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+}

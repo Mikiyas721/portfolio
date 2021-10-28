@@ -1,11 +1,14 @@
-<div class="container">
+<div class="container px-5">
 
-  <div class="card mt-6">
+  <div class="mt-6">
     <div class="card-content">
-
-      <div id="detailsCarousel" class="carousel">
-        <div *ngFor="let item of data" class="carousel-item">
-          <img [src]="item.carouselImages" alt="">
+      <div class="carousel mb-6" id="carousel">
+        <div
+          style="height: 400px;padding-left: 100px"
+          class="item"
+          *ngFor="let url of data.carouselImages"
+        >
+          <img style="height: 400px" [src]="url" alt="">
         </div>
       </div>
 
@@ -39,7 +42,7 @@
       </div>
     </div>
     <div class="card-footer is-justify-content-end pr-5 pb-3">
-      <a class="mt-2" target="_blank" [href]="data.githubLink">
+      <a class="mt-2 gitLink" target="_blank" [href]="data.githubLink">
         {{data.githubLink}}
       </a>
     </div>
@@ -48,8 +51,8 @@
 
   <div><p class="myTitle">In-use</p></div>
 
-  <div class="m-6">
-    <img class="picture" style="margin-left: 35%" src="/assets/images/giphy.webp">
+  <div class="m-6" style="text-align: center">
+    <img class="picture" src="/assets/images/giphy.webp">
   </div>
 
 </div>
