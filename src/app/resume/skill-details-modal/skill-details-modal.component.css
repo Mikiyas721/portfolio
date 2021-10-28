@@ -1,0 +1,17 @@
+.actions:empty {
+  display: none;
+}
+
+.actions-default {
+  display: none;
+}
+
+.actions:empty + .actions-default {
+  display: block;
+}
+.my-description{
+  color: grey;
+  font-size: medium;
+  margin-bottom: 5px;
+}
+

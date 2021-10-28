@@ -1,3 +1,117 @@
-<div class="container">
-  Resume
+<div class="columns">
+
+  <div class="column is-2 mt-6 ml-5">
+    <div>
+
+      <div class="subtitle mb-2">
+        <p>Currently Exploring</p>
+      </div>
+
+      <div class="ml-3">
+        <div class="icon-text">
+          <p>
+              <span class="icon">
+              <img class="picture" src="assets/logos/angular.png">
+            </span>
+            Angular
+          </p>
+        </div>
+
+        <div class="icon-text">
+          <p>
+              <span class="icon">
+               <img class="picture" src="assets/logos/kotlin.png">
+            </span>
+            Kotlin
+          </p>
+        </div>
+
+        <div class="icon-text">
+          <p>
+              <span class="icon">
+              <img class="picture" src="assets/logos/jetpack.png">
+            </span>
+            JetPack Compose
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-top: 50px">
+
+        <div class="subtitle mb-2">
+          <p>Preferred IDEs</p>
+        </div>
+
+        <div class="ml-4">
+
+          <div class="columns" style="width:150px">
+
+            <div class="column" style="width:60%">
+              <p>Android</p>
+              <p>Web</p>
+              <p>Others</p>
+            </div>
+
+            <div class="column is-5" style="width:30%">
+              <img class="picture my-icon" src="assets/logos/android_studio.png">
+              <img class="picture my-icon" src="assets/logos/webstorm.png">
+              <img class="picture my-icon" src="assets/logos/intellij.png">
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column is-4 mt-4">
+
+    <ng-container *ngIf="primarySkills">
+      <div class="mb-4">
+        <div class="title">Primary Skills</div>
+        <ng-container *ngFor="let primary of primarySkills">
+          <app-skill-card (onCardClick)="onSkillClick(primary)" [framework]="primary"></app-skill-card>
+        </ng-container>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="supportiveSkills">
+      <div class="title">Supportive Skills</div>
+      <ng-container *ngFor="let supportive of supportiveSkills">
+        <app-skill-card (onCardClick)="onSkillClick(supportive)" [framework]="supportive"></app-skill-card>
+      </ng-container>
+    </ng-container>
+
+  </div>
+
+  <div class="column is-4 ml-2 mt-4">
+
+    <ng-container *ngIf="secondarySkills">
+      <div class="mb-4">
+        <div class="title">Secondary Skills</div>
+        <ng-container *ngFor="let secondary of secondarySkills">
+          <app-skill-card (onCardClick)="onSkillClick(secondary)" [framework]="secondary"></app-skill-card>
+        </ng-container>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="others">
+      <div class="title">Others</div>
+      <ng-container *ngFor="let other of others">
+        <app-skill-card (onCardClick)="onSkillClick(other)" [framework]="other"></app-skill-card>
+      </ng-container>
+    </ng-container>
+
+  </div>
+
 </div>
+
+<app-skill-details-modal
+  [data]="selectedSkillData"
+  (onClose)="onCloseModal()"
+  *ngIf="showModal"
+>
+</app-skill-details-modal>

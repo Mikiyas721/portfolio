@@ -1,0 +1,45 @@
+<div class="modal is-active">
+  <div (click)="closeModal()" class="modal-background"></div>
+  <div class="modal-card">
+    <div class="modal-content">
+
+      <header class="modal-card-head">
+        <img style="width: 64px" [src]="data.iconUrl">
+        <p class="modal-card-title ml-2">{{data.title}}</p>
+        <button (click)="closeModal()" class="delete"></button>
+      </header>
+
+      <section class="modal-card-body">
+        <p *ngIf="data.engagement" class="subtitle">Engagement : <span>{{data.engagement}}</span></p>
+
+        <div class="my-description">{{data.briefDescription}}</div>
+
+        <div *ngIf="data.projects.length>0">
+          <p class="subtitle mb-3">Project(s)</p>
+          <ul *ngFor="let project of data.projects">
+            <li class="ml-4">
+              {{project}}
+            </li>
+          </ul>
+        </div>
+
+        <div *ngIf="data.courses">
+          <p class="subtitle mb-2 mt-3">Course(s)</p>
+          <ng-container *ngFor="let course of data.courses">
+            <div class="ml-4">
+              <div>
+                {{course.title}}
+              </div>
+              <div class="ml-2" style="font-style: italic">
+                by: -{{course.by}}
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+</div>

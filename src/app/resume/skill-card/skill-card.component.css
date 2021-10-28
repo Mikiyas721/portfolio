@@ -1,0 +1,19 @@
+.card{
+  width: max-content;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  top: 0;
+  padding: 10px;
+  transition: top ease 0.5s;
+  display: inline-block;
+  align-content: center;
+}
+.picture{
+  width: 36px;
+}
+
+.card:hover{
+  top: -10px;
+  background-color: #FAFAFA;
+}
+
