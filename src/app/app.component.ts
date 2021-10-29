@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Router} from '@angular/router'
 
 @Component({
@@ -7,19 +7,21 @@ import {Router} from '@angular/router'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private router:Router) {
+  constructor(private router: Router) {
   }
-  getUnderlined():number{
-    if(this.router.url =='/') return 0
-    else if(this.router.url ==='/portfolio') return 1
-    else if(this.router.url ==='/resume') return 2
+
+  getUnderlined(): number {
+    if (this.router.url == '/') return 0
+    else if (this.router.url.startsWith('/portfolio') && this.router.url.split('/').length === 2) return 1
+    else if (this.router.url === '/resume') return 2
     return 3
   }
-  getTitle():string{
+
+  getTitle(): string {
     const route = this.getUnderlined()
-    if(route==0) return 'Basic Information'
-    else if (route==1) return 'Portfolio'
-    else if(route==2) return 'Curriculum Vitae'
+    if (route == 0) return 'Basic Information'
+    else if (route == 1) return 'Portfolio'
+    else if (route == 2) return 'Curriculum Vitae'
     else return 'Project'
   }
 }

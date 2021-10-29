@@ -6,9 +6,9 @@
 
   <div class="column is-2 m-5 box is-fixed-top sideMenu">
     <ul>
-      <li class="subtitle mb-1"><a href="./portfolio/#MobileApplications">Mobile Applications</a></li>
-      <li class="subtitle mb-1"><a href="./portfolio/#WebApplications">Websites</a></li>
-      <li class="subtitle mb-1"><a href="./portfolio/#BotApplications">Telegram Bots</a></li>
+      <li (click)="onInPageRoute($event, 'MobileApplications')" class="subtitle mb-1"><a href="">Mobile Applications</a></li>
+      <li (click)="onInPageRoute($event, 'WebApplications')" class="subtitle mb-1"><a href="">Websites</a></li>
+      <li (click)="onInPageRoute($event, 'BotApplications')" class="subtitle mb-1"><a href="">Telegram Bots</a></li>
     </ul>
   </div>
 

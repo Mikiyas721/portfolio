@@ -40,7 +40,7 @@ export class ResumeHomeComponent implements OnInit {
         'Additive Encryption Implementation'
       ],
       courses: [
-        {title: 'Dart 2 Complete Bootcamp - Go Hero from Zero in Dart Flutter', by: '???'}
+        {title: 'Dart 2 Complete Bootcamp - Go Hero from Zero in Dart Flutter', by: 'Ajinkya Temak'}
       ]
     },
     {
@@ -54,11 +54,13 @@ export class ResumeHomeComponent implements OnInit {
       projects: [
         'ChessGame',
         'Library Management System',
+        'University Database Management System',
         'Math Assistant',
         'Dijkstra\'s Algorithm Implementation'
       ],
       courses: [
-        {title: 'Object Oriented Programming', by: 'Collage Teacher'}
+        {title: 'Object Oriented Programming', by: 'College Teacher'},
+        {title: 'Youtube Videos', by: 'Bucky Roberts'},
       ]
     },
   ]
@@ -77,9 +79,9 @@ export class ResumeHomeComponent implements OnInit {
         'Sales Tracker API',
       ],
       courses: [
-        {title: 'The Complete Nodejs Developer Course', by: '???'},
-        {title: 'Node.js  Rest API Development Using Loopback', by: '???'},
-        {title: 'Build Telegram Bots with JavaScript The Complete Guide', by: '???'},
+        {title: 'The Complete Nodejs Developer Course', by: 'Andrew Mead'},
+        {title: 'Node.js  Rest API Development Using Loopback', by: 'Haider Malik'},
+        {title: 'Build Telegram Bots with JavaScript The Complete Guide', by: 'Mark Tan'},
       ]
     },
     {
@@ -91,10 +93,10 @@ export class ResumeHomeComponent implements OnInit {
         'on a Raspberry Pi, this was our Thesis Project.',
       projects: [
         'Password Generator',
-        'Smart Traffic Control System(Collage Thesis)',
+        'Smart Traffic Control System(College Thesis)',
       ],
       courses: [
-        {title: 'Learn Python Programming Masterclass', by: '???'},
+        {title: 'Learn Python Programming Masterclass', by: 'Tim Buchalka'},
       ]
 
     },
@@ -110,7 +112,7 @@ export class ResumeHomeComponent implements OnInit {
       ],
       courses: [
         {
-          title: 'Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)', by: '???'
+          title: 'Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)', by: 'Maximilian Schwarzmüller'
         }
       ]
     },
@@ -124,7 +126,7 @@ export class ResumeHomeComponent implements OnInit {
         'Smart Traffic Control System Website'
       ],
       courses: [
-        {title: 'React Front To Back', by: '???'}
+        {title: 'React Front To Back', by: 'Brad Traversy'}
       ]
     },
     {
@@ -154,8 +156,8 @@ export class ResumeHomeComponent implements OnInit {
 
       ],
       courses: [
-        {title: 'Adobe.XD.Essential.Training.Design.Oct.2018', by: '???'},
-        {title: 'User Experience Design Essentials - Adobe XD UI UX Design(Partially)', by: '???'},
+        {title: 'Adobe XD Essential Training Design', by: 'Beaumont, Dani'},
+        {title: 'User Experience Design Essentials - Adobe XD UI UX Design(Partially)', by: 'Daniel Walter Scott'},
       ]
     },
     {
@@ -167,7 +169,7 @@ export class ResumeHomeComponent implements OnInit {
         'All projects after I started using GitHub'
       ],
       courses: [
-        {title: 'Git Complete The definitive, step-by-step guide to Git', by: '???'}
+        {title: 'Git Complete The definitive, step-by-step guide to Git', by: 'Jason Taylor'}
       ]
     },
   ]
@@ -193,7 +195,7 @@ export class ResumeHomeComponent implements OnInit {
         'understand the some of the few differences it has with Java.',
       projects: [],
       courses: [
-        {title: 'C# Basics for Beginners Learn C# Fundamentals by Coding', by: '???'}
+        {title: 'C# Basics for Beginners Learn C# Fundamentals by Coding', by: 'Mosh Hamedani'}
       ]
     },
     {
@@ -219,7 +221,7 @@ export class ResumeHomeComponent implements OnInit {
         'Tic Tac Toe Game'
       ],
       courses: [
-        {title: 'Kotlin for Beginners Learn Programming With Kotlin', by: '???'}
+        {title: 'Kotlin for Beginners Learn Programming With Kotlin', by: 'Peter Sommerhoff'}
       ]
     }
   ]

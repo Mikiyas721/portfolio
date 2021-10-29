@@ -27,7 +27,8 @@ export class PortfolioHomeComponent implements OnInit {
           {label: 'API', framework: 'Loopback API'}
         ],
         designPatterns: [
-          'Domain Driven Design'
+          'Domain Driven Design',
+          'BLOC Pattern'
         ]
       },
       downloadLink: {title: 'Sales Tracker', url: '/assets/images/1/1.jpg'},
@@ -46,23 +47,25 @@ export class PortfolioHomeComponent implements OnInit {
       ]
     },
     {
-      title: "Sales Tracker",
-      githubLink: "https://github.com/Mikiyas721/abc",
+      title: "Rick and Morty",
+      githubLink: "https://github.com/Mikiyas721/rnm_2.git",
       content: {
-        description: this.descriptionSample,
+        description: 'This application uses a third party API that was made using GraphQL. It gives information about' +
+          'the characters, locations and episodes of the move. The frontend application fetches data from this api and ' +
+          'display it in a presentable way. Additional it allows users to star their favourite character, which is stored' +
+          'locally.',
         applications: [
-          {label: 'Mobile Application for Sales People', framework: 'Flutter'},
-          {label: 'Mobile Application for Admin', framework: 'Flutter'},
-          {label: 'API', framework: 'Loopback API'}
+          {label: 'Mobile Application', framework: 'Flutter'}
         ],
         designPatterns: [
-          'Domain Driven Design'
+          'BLOC Pattern'
         ]
       },
       downloadLink: {title: 'Rick and Morty', url: '/assets/images/1/2.jpg'},
       frameWorksLogo: [
         'assets/logos/flutter.png',
-        'assets/logos/node.png',
+        'assets/logos/flutter.png',
+        'assets/logos/flutter.png',
       ],
       carouselImages: [
         'assets/images/1/1.jpg',
@@ -74,22 +77,24 @@ export class PortfolioHomeComponent implements OnInit {
       ]
     },
     {
-      title: "Sales Tracker",
-      githubLink: "https://github.com/Mikiyas721/abc",
+      title: "Todos",
+      githubLink: "https://github.com/Mikiyas721/flutter_todo.git",
       content: {
-        description: this.descriptionSample,
+        description: 'This application is used to keep daily todo-list. It uses a Hasura API keep users ' +
+          'tasks using their account. The front end uses a Flutter GraphQL extension to make GraphQL ' +
+          'query, mutation and subscriptions',
         applications: [
-          {label: 'Mobile Application for Sales People', framework: 'Flutter'},
-          {label: 'Mobile Application for Admin', framework: 'Flutter'},
-          {label: 'API', framework: 'Loopback API'}
+          {label: 'Mobile Application', framework: 'Flutter'},
         ],
         designPatterns: [
-          'Domain Driven Design'
+          'BLOC Pattern'
         ]
       },
-      downloadLink: {title: 'Share Recipe', url: '/assets/images/1/3.jpg'},
+      downloadLink: {title: 'Todos', url: '/assets/images/1/3.jpg'},
       frameWorksLogo: [
-        'assets/logos/flutter.png'
+        'assets/logos/flutter.png',
+        'assets/logos/flutter.png',
+        'assets/logos/flutter.png',
       ],
       carouselImages: [
         'assets/images/1/1.jpg',
@@ -101,23 +106,23 @@ export class PortfolioHomeComponent implements OnInit {
       ]
     },
     {
-      title: "Sales Tracker",
-      githubLink: "https://github.com/Mikiyas721/abc",
+      title: "Share Recipes",
+      githubLink: "https://github.com/Mikiyas721/recipe.git",
       content: {
-        description: this.descriptionSample,
+        description: 'An application made for the purpose of recipe sharing among users. Recipes are ' +
+          'stored on a Hasura API using GraphQL.',
         applications: [
-          {label: 'Mobile Application for Sales People', framework: 'Flutter'},
-          {label: 'Mobile Application for Admin', framework: 'Flutter'},
-          {label: 'API', framework: 'Loopback API'}
+          {label: 'Mobile Application', framework: 'Flutter'}
         ],
         designPatterns: [
-          'Domain Driven Design'
+          'BLOC Pattern'
         ]
       },
-      downloadLink: {title: 'Todo', url: '/assets/images/1/4.jpg'},
+      downloadLink: {title: 'Recipe', url: '/assets/images/1/4.jpg'},
       frameWorksLogo: [
         'assets/logos/flutter.png',
         'assets/logos/node.png',
+        'assets/logos/node.png',
       ],
       carouselImages: [
         'assets/images/1/1.jpg',
@@ -129,23 +134,22 @@ export class PortfolioHomeComponent implements OnInit {
       ]
     },
     {
-      title: "Sales Tracker",
-      githubLink: "https://github.com/Mikiyas721/abc",
+      title: "Chess",
+      githubLink: "https://github.com/Mikiyas721/chess.git",
       content: {
-        description: this.descriptionSample,
+        description: 'A Flutter application for Chess Game. The application uses SQLite DB to save games. Uses' +
+          ' Dart Isolates to run an algorithm when playing with the computer.',
         applications: [
-          {label: 'Mobile Application for Sales People', framework: 'Flutter'},
-          {label: 'Mobile Application for Admin', framework: 'Flutter'},
-          {label: 'API', framework: 'Loopback API'}
+          {label: 'Mobile Application', framework: 'Flutter'}
         ],
         designPatterns: [
-          'Domain Driven Design'
+          'Min-Max Algorithm'
         ]
       },
       downloadLink: {title: 'Chess', url: '/assets/images/1/5.jpg'},
       frameWorksLogo: [
         'assets/logos/flutter.png',
-        'assets/logos/node.png',
+        'assets/logos/sqlite.png',
       ],
       carouselImages: [
         'assets/images/1/1.png',
@@ -282,6 +286,10 @@ export class PortfolioHomeComponent implements OnInit {
 
   onPortfolioCardClick(object: any) {
     this.sharedService.selectedPortfolio = object
+  }
+  onInPageRoute(event:Event, hash:string){
+    event.preventDefault()
+    console.log(window.location.hash = `#${hash}`)
   }
 
 
