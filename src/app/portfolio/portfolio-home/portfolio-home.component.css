@@ -1,7 +1,21 @@
-.sideMenu{
+.sideMenu {
   position: fixed;
 }
-.portfolioBody{
-  margin-left: 22%;
+
+@media only screen and (max-width: 1000px) {
+  .sideMenu {
+    display: none;
+  }
+
+  .portfolioBody {
+    margin-left: 0;
+  }
 }
+
+@media only screen and (min-width: 1000px) {
+  .portfolioBody {
+    margin-left: 22%;
+  }
+}
+
 

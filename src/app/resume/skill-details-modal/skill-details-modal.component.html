@@ -16,11 +16,28 @@
 
         <div *ngIf="data.projects.length>0">
           <p class="subtitle mb-3">Project(s)</p>
-          <ul *ngFor="let project of data.projects">
-            <li class="ml-4">
-              {{project}}
-            </li>
-          </ul>
+
+          <ng-container *ngIf="!data.hasLinkedProjects">
+            <ul *ngFor="let project of data.projects">
+              <li class="ml-4">
+                {{project}}
+              </li>
+            </ul>
+          </ng-container>
+
+          <ng-container *ngIf="data.hasLinkedProjects">
+            <ul *ngFor="let project of data.projects">
+              <li class="ml-4">
+                <a
+                  [href]="project.gitLink"
+                  target="_blank"
+                >
+                  {{project.title}}
+                </a>
+              </li>
+            </ul>
+          </ng-container>
+
         </div>
 
         <div *ngIf="data.courses">

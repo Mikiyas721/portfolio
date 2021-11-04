@@ -8,3 +8,17 @@
   margin-left: 10px;
   width: 36px
 }
+.leftInfoTitle{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .column {
+    text-align: center;
+  }
+  .icon-text{
+    text-align: center;
+  }
+}

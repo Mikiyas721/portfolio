@@ -21,13 +21,13 @@
 
           <div class="columns ml-4">
 
-            <div class="column is-5">
+            <div class="column is-3">
               <ng-container *ngFor="let app of data.content.applications">
                 <p>{{app.label}}</p>
               </ng-container>
             </div>
 
-            <div class="column">
+            <div class="column frameWorkColumn">
               <ng-container *ngFor="let app of data.content.applications">
                 <p class="is-italic">{{app.framework}}</p>
               </ng-container>
@@ -36,7 +36,7 @@
           </div>
 
           <ng-container *ngFor="let design of data.content.designPatterns">
-            <p class="subtitle m-1">{{design}}</p>
+            <p class="subtitle m-1" [innerHTML]="design"></p>
           </ng-container>
         </div>
       </div>

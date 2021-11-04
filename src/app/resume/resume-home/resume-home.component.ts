@@ -19,15 +19,18 @@ export class ResumeHomeComponent implements OnInit {
         'API was mostly implemented by my partner. My engagement on the application we made for a personal business was mostly around UI. In the ' +
         'applications I made for practice, I explored different Architectures and things about flutter.',
       projects: [
-        'Sales Tracker',
-        'Rick and Morty',
-        'Share Recipe',
-        'Todo',
-        'Chess',
+        {title: 'Sales Tracker', gitLink: 'https://github.com/Mikiyas721/sales_tracker.git'},
+        {title: 'Rick and Morty', gitLink: 'https://github.com/Mikiyas721/rnm_2.git'},
+        {title: 'Recipe', gitLink: 'https://github.com/Mikiyas721/recipe.git'},
+        {title: 'Todo', gitLink: 'https://github.com/Mikiyas721/flutter_todo.git'},
+        {title: 'Chess', gitLink: 'https://github.com/Mikiyas721/chess.git'},
+        {title: 'Media Player', gitLink: 'https://github.com/Mikiyas721/vlc.git'},
+        {title: 'WCT', gitLink: 'https://github.com/Mikiyas721/WCT.git'},
       ],
       courses: [
         {title: 'Dart and Flutter The Complete Developer\'s Guide', by: 'Stephen Grider'}
       ],
+      hasLinkedProjects:true
     },
     {
       title: 'Dart',
@@ -37,11 +40,12 @@ export class ResumeHomeComponent implements OnInit {
         'all the projects I worked on using using Dart' +
         'are similar with my Flutter Projects',
       projects: [
-        'Additive Encryption Implementation'
+        'Additive Encryption Implementation',
       ],
       courses: [
         {title: 'Dart 2 Complete Bootcamp - Go Hero from Zero in Dart Flutter', by: 'Ajinkya Temak'}
-      ]
+      ],
+      hasLinkedProjects: false
     },
     {
       title: 'Java',
@@ -52,16 +56,17 @@ export class ResumeHomeComponent implements OnInit {
         'I worked on a couple of desktop applications using Java Swing and Javafx. In addition to taking a course ' +
         '\'Object Oriented Programming\' in collage, I worked on other projects personally.',
       projects: [
-        'ChessGame',
-        'Library Management System',
-        'University Database Management System',
-        'Math Assistant',
-        'Dijkstra\'s Algorithm Implementation'
+        {title: 'ChessGame', gitLink: 'https://github.com/Mikiyas721/ChessGame.git'},
+        {title: 'Library Management System', gitLink: 'https://github.com/Mikiyas721/LibraryManagment.git'},
+        {title: 'University Database Management System', gitLink: 'https://github.com/Mikiyas721/University-Database-Managment.git'},
+        {title: 'Math Assistant', gitLink: 'https://github.com/Mikiyas721/MathAssistant.git'},
+        {title: 'Dijkstra\'s Algorithm Implementation', gitLink: 'https://github.com/Mikiyas721/dijkstra-s-algorithm.git'},
       ],
       courses: [
         {title: 'Object Oriented Programming', by: 'College Teacher'},
         {title: 'Youtube Videos', by: 'Bucky Roberts'},
-      ]
+      ],
+      hasLinkedProjects: true
     },
   ]
   secondarySkills = [
@@ -73,16 +78,17 @@ export class ResumeHomeComponent implements OnInit {
         'I learned ExpressJS and then Loopback API. Ever since, I use Loopback to make an API. ' +
         'In addition I use Node to build Telegram Bots.',
       projects: [
-        'StackOverflow Bot',
-        'Question Bot',
-        'Gab Bot',
-        'Sales Tracker API',
+        {title: 'StackOverflow Bot', gitLink: 'https://github.com/Mikiyas721/stackoverflowbot.git'},
+        {title: 'Question Bot', gitLink: 'https://github.com/Mikiyas721/questionbot.git'},
+        {title: 'Gab Bot', gitLink: 'https://github.com/Mikiyas721/gabbot.git'},
+        {title: 'Sales Tracker API', gitLink: 'https://github.com/Mikiyas721/sales_tracker_api.git'},
       ],
       courses: [
         {title: 'The Complete Nodejs Developer Course', by: 'Andrew Mead'},
         {title: 'Node.js  Rest API Development Using Loopback', by: 'Haider Malik'},
         {title: 'Build Telegram Bots with JavaScript The Complete Guide', by: 'Mark Tan'},
-      ]
+      ],
+      hasLinkedProjects: true
     },
     {
       title: 'Python',
@@ -92,13 +98,13 @@ export class ResumeHomeComponent implements OnInit {
         'Two of these projects use Tkinter for UI while the third one is a program that was developed to run ' +
         'on a Raspberry Pi, this was our Thesis Project.',
       projects: [
-        'Password Generator',
-        'Smart Traffic Control System(College Thesis)',
+        {title: 'Password Generator and Others', gitLink: 'https://github.com/Mikiyas721/Python-Exercises.git'},
+        {title: 'Smart Traffic Control System(College Thesis)', gitLink: 'https://github.com/Mikiyas721/thesis/tree/master/controller'},
       ],
       courses: [
         {title: 'Learn Python Programming Masterclass', by: 'Tim Buchalka'},
-      ]
-
+      ],
+      hasLinkedProjects: true
     },
     {
       title: 'Vue',
@@ -108,13 +114,14 @@ export class ResumeHomeComponent implements OnInit {
         ' I started VueJs to make a website for a startup I was working on then. I used Vuetify UI library for ' +
         'the project I worked on.',
       projects: [
-        'Tolodelivery LandingPage'
+        {title: 'Tolodelivery LandingPage', gitLink: 'https://github.com/Mikiyas721/tolodelivery_landingPage.git'},
       ],
       courses: [
         {
           title: 'Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)', by: 'Maximilian Schwarzmüller'
         }
-      ]
+      ],
+      hasLinkedProjects: true
     },
     {
       title: 'React',
@@ -123,11 +130,12 @@ export class ResumeHomeComponent implements OnInit {
       briefDescription: 'Using React I only made a simple website that displays data from an API, this was part of ' +
         'our thesis project.',
       projects: [
-        'Smart Traffic Control System Website'
+        {title: 'Smart Traffic Control System Website', gitLink: 'https://github.com/Mikiyas721/thesis/tree/master/web'},
       ],
       courses: [
         {title: 'React Front To Back', by: 'Brad Traversy'}
-      ]
+      ],
+      hasLinkedProjects: true
     },
     {
       title: 'Angular',
@@ -135,11 +143,12 @@ export class ResumeHomeComponent implements OnInit {
       engagement: '2 weeks',
       briefDescription: 'I am currently learning Angular. This website was made using Angular.',
       projects: [
-        'Portfolio'
+        {title: 'Portfolio', gitLink: 'https://github.com/Mikiyas721/portfolio.git'},
       ],
       courses: [
         {title: 'The Modern Angular Bootcamp [2020] 2021-2', by: 'Stephen Grider'}
-      ]
+      ],
+      hasLinkedProjects: true
     },
   ]
   supportiveSkills = [
@@ -153,12 +162,12 @@ export class ResumeHomeComponent implements OnInit {
         'Sales Tracker UI',
         'College Semester Project UI',
         'Portfolio',
-
       ],
       courses: [
         {title: 'Adobe XD Essential Training Design', by: 'Beaumont, Dani'},
         {title: 'User Experience Design Essentials - Adobe XD UI UX Design(Partially)', by: 'Daniel Walter Scott'},
-      ]
+      ],
+      hasLinkedProjects: false
     },
     {
       title: 'GitHub',
@@ -170,13 +179,14 @@ export class ResumeHomeComponent implements OnInit {
       ],
       courses: [
         {title: 'Git Complete The definitive, step-by-step guide to Git', by: 'Jason Taylor'}
-      ]
+      ],
+      hasLinkedProjects: false
     },
   ]
   others = [
     {
       title: 'Hasura',
-      iconUrl: '/assets/logos/git.png',
+      iconUrl: '/assets/logos/hasura.png',
       engagement: '2 months',
       briefDescription: 'During my internship program in my college stay, the company I worked in instructed me to use ' +
         'Hasura to develop API for the Flutter Applications I was working on. One of the projects used a third party API.' +
@@ -184,8 +194,9 @@ export class ResumeHomeComponent implements OnInit {
       projects: [
         'Todo API',
         'Share Recipe API',
-        'Rick and Morty'
+        'Rick and Morty',
       ],
+      hasLinkedProjects: false
     },
     {
       title: 'C#',
@@ -196,7 +207,8 @@ export class ResumeHomeComponent implements OnInit {
       projects: [],
       courses: [
         {title: 'C# Basics for Beginners Learn C# Fundamentals by Coding', by: 'Mosh Hamedani'}
-      ]
+      ],
+      hasLinkedProjects: false
     },
     {
       title: 'Android',
@@ -205,11 +217,12 @@ export class ResumeHomeComponent implements OnInit {
       briefDescription: 'I had briefly looked into android native (Java) right after I learned ' +
         'Java and right before I started Flutter. In this time I have done basic things with Android',
       projects: [
-        'Simple Calculator'
+        {title: 'Simple Calculator', gitLink: 'https://github.com/Mikiyas721/Calculator.git'},
       ],
-      courses:[
-        {title:'Youtube course', by: 'Bucky Roberts'}
-      ]
+      courses: [
+        {title: 'Youtube course', by: 'Bucky Roberts'}
+      ],
+      hasLinkedProjects: true
     },
     {
       title: 'Kotlin',
@@ -218,11 +231,12 @@ export class ResumeHomeComponent implements OnInit {
       briefDescription: 'I have recently started learning Kotlin to be able to use Jetpack Compose to build android native' +
         'applications.',
       projects: [
-        'Tic Tac Toe Game'
+        {title: 'Tic Tac Toe Game', gitLink: 'https://github.com/Mikiyas721/kotlin_practices/tree/master/Tic%20Tac%20Toe'},
       ],
       courses: [
         {title: 'Kotlin for Beginners Learn Programming With Kotlin', by: 'Peter Sommerhoff'}
-      ]
+      ],
+      hasLinkedProjects: true
     }
   ]
 
