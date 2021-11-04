@@ -1,24 +1,37 @@
-.container{
+.container {
   margin: 0 17%;
 }
-.subtitle{
+
+.subtitle {
   font-family: Poppins;
 }
-.my-icon{
+
+.my-icon {
   margin-left: 10px;
   width: 36px
 }
-.leftInfoTitle{
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  max-width: 100%;
-}
+
 @media only screen and (max-width: 768px) {
   .column {
     text-align: center;
+    margin-top: 15px;
   }
-  .icon-text{
-    text-align: center;
+  .forLarge {
+    display: none;
+  }
+  .forSmall{
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .column {
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .forSmall {
+    display: none;
+  }
+  .forLarge{
+    display: block;
   }
 }

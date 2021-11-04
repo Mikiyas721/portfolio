@@ -36,12 +36,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/node.png',
       ],
       carouselImages: [
-        'assets/images/1/1.jpg',
-        'assets/images/1/2.jpg',
-        'assets/images/1/3.jpg',
-        'assets/images/1/4.jpg',
-        'assets/images/1/5.jpg',
-        'assets/images/1/6.jpg',
+        'assets/carousel_images/mobile/sales_tracker/1.jpg',
+        'assets/carousel_images/mobile/sales_tracker/2.jpg',
+        'assets/carousel_images/mobile/sales_tracker/3.jpg',
+        'assets/carousel_images/mobile/sales_tracker/4.jpg',
+        'assets/carousel_images/mobile/sales_tracker/5.jpg',
+        'assets/carousel_images/mobile/sales_tracker/6.jpg',
       ]
     },
     {
@@ -63,15 +63,15 @@ export class PortfolioHomeComponent implements OnInit {
       frameWorksLogo: [
         'assets/logos/flutter.png',
         'assets/logos/graphql.png',
-        'assets/logos/sqlite.png',
+        'assets/logos/sqlite.jpg',
       ],
       carouselImages: [
-        'assets/images/1/1.jpg',
-        'assets/images/1/2.jpg',
-        'assets/images/1/3.jpg',
-        'assets/images/1/4.jpg',
-        'assets/images/1/5.jpg',
-        'assets/images/1/6.jpg',
+        'assets/carousel_images/mobile/rick_morty/1.jpg',
+        'assets/carousel_images/mobile/rick_morty/2.jpg',
+        'assets/carousel_images/mobile/rick_morty/3.jpg',
+        'assets/carousel_images/mobile/rick_morty/4.jpg',
+        'assets/carousel_images/mobile/rick_morty/5.jpg',
+        'assets/carousel_images/mobile/rick_morty/6.jpg',
       ]
     },
     {
@@ -94,12 +94,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/hasura.png'
       ],
       carouselImages: [
-        'assets/images/1/1.jpg',
-        'assets/images/1/2.jpg',
-        'assets/images/1/3.jpg',
-        'assets/images/1/4.jpg',
-        'assets/images/1/5.jpg',
-        'assets/images/1/6.jpg',
+        'assets/carousel_images/mobile/todo/1.jpg',
+        'assets/carousel_images/mobile/todo/2.jpg',
+        'assets/carousel_images/mobile/todo/3.jpg',
+        'assets/carousel_images/mobile/todo/4.jpg',
+        'assets/carousel_images/mobile/todo/5.jpg',
+        'assets/carousel_images/mobile/todo/6.jpg',
       ]
     },
     {
@@ -121,12 +121,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/hasura.png',
       ],
       carouselImages: [
-        'assets/images/1/1.jpg',
-        'assets/images/1/2.jpg',
-        'assets/images/1/3.jpg',
-        'assets/images/1/4.jpg',
-        'assets/images/1/5.jpg',
-        'assets/images/1/6.jpg',
+        'assets/carousel_images/mobile/recipe/1.jpg',
+        'assets/carousel_images/mobile/recipe/2.jpg',
+        'assets/carousel_images/mobile/recipe/3.jpg',
+        'assets/carousel_images/mobile/recipe/4.jpg',
+        'assets/carousel_images/mobile/recipe/5.jpg',
+        'assets/carousel_images/mobile/recipe/6.jpg',
       ]
     },
     {
@@ -146,16 +146,16 @@ export class PortfolioHomeComponent implements OnInit {
       downloadLink: {title: 'Chess.apk', url: '/assets/apks/chess.apk'},
       frameWorksLogo: [
         'assets/logos/flutter.png',
-        'assets/logos/sqlite.png',
+        'assets/logos/sqlite.jpg',
 
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/carousel_images/mobile/chess/1.jpg',
+        'assets/carousel_images/mobile/chess/2.jpg',
+        'assets/carousel_images/mobile/chess/3.jpg',
+        'assets/carousel_images/mobile/chess/4.jpg',
+        'assets/carousel_images/mobile/chess/5.jpg',
+        'assets/carousel_images/mobile/chess/6.jpg',
       ]
     }
   ]
@@ -178,12 +178,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/vue.png',
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/carousel_images/website/tolo/1.jpg',
+        'assets/carousel_images/website/tolo/2.jpg',
+        'assets/carousel_images/website/tolo/3.jpg',
+        'assets/carousel_images/website/tolo/4.jpg',
+        'assets/carousel_images/website/tolo/5.jpg',
+        'assets/carousel_images/website/tolo/6.jpg',
       ]
     },
     {
@@ -208,12 +208,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/node.png',
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/carousel_images/website/sm/1.jpg',
+        'assets/carousel_images/website/sm/2.jpg',
+        'assets/carousel_images/website/sm/3.jpg',
+        'assets/carousel_images/website/sm/4.jpg',
+        'assets/carousel_images/website/sm/5.jpg',
+        'assets/carousel_images/website/sm/6.jpg',
       ]
     }
   ]
@@ -237,12 +237,12 @@ export class PortfolioHomeComponent implements OnInit {
 
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/carousel_images/bot/stack_overflow/1.jpg',
+        'assets/carousel_images/bot/stack_overflow/2.jpg',
+        'assets/carousel_images/bot/stack_overflow/3.jpg',
+        'assets/carousel_images/bot/stack_overflow/4.jpg',
+        'assets/carousel_images/bot/stack_overflow/5.jpg',
+        'assets/carousel_images/bot/stack_overflow/6.jpg',
       ],
       telegramBotLink: {telegramId: '@Stackoverflowrealbot', link: 'https://t.me/Stackoverflowrealbot'}
     },
@@ -265,12 +265,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/mongodb.png',
       ],
       carouselImages: [
-        'assets/images/1/1.png',
-        'assets/images/1/2.png',
-        'assets/images/1/3.png',
-        'assets/images/1/4.png',
-        'assets/images/1/5.png',
-        'assets/images/1/6.png',
+        'assets/carousel_images/bot/questions/1.jpg',
+        'assets/carousel_images/bot/questions/2.jpg',
+        'assets/carousel_images/bot/questions/3.jpg',
+        'assets/carousel_images/bot/questions/4.jpg',
+        'assets/carousel_images/bot/questions/5.jpg',
+        'assets/carousel_images/bot/questions/6.jpg',
       ],
       telegramBotLink: {telegramId: '@questionrealbot', link: 'https://t.me/questionrealbot'}
     }

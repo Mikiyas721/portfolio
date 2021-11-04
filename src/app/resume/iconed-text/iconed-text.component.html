@@ -1,0 +1,16 @@
+<div>
+
+  <div class="subtitle mb-2">
+    <p class="myTitle">{{labels.title}}</p>
+  </div>
+
+  <div class="body">
+    <div class="ml-3 mb-1" *ngFor="let label of labels.data">
+      <img class="icon is-medium" [src]="label.iconUrl">
+      <span style="vertical-align: top" [innerHTML]="label.text">
+      </span>
+    </div>
+  </div>
+
+</div>
+

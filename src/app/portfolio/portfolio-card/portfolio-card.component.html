@@ -51,7 +51,7 @@
       class="card-footer is-justify-content-space-between pl-5 pr-5 pb-1"
       *ngIf="portfolio.downloadLink||portfolio.frameWorksLogo"
     >
-      <div>
+      <div style="vertical-align: center">
         <ng-container *ngFor="let logo of portfolio.frameWorksLogo">
           <img style="width:48px" class="mr-1" [src]="logo">
         </ng-container>

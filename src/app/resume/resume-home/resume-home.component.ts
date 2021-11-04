@@ -8,6 +8,25 @@ import {Component, OnInit} from '@angular/core';
 export class ResumeHomeComponent implements OnInit {
   showModal = false
   selectedSkillData: any
+
+  exploring = {
+    title:'Currently Exploring',
+    data:[
+      {iconUrl: 'assets/logos/angular.png', text: '&nbsp;Angular'},
+      {iconUrl: 'assets/logos/kotlin.png', text: '&nbsp;Kotlin&nbsp;&nbsp;'},
+      {iconUrl: 'assets/logos/jetpack.png', text: '&nbsp;JetPack'}
+    ]
+  }
+
+  ides = {
+    title:'Preferred IDEs',
+    data: [
+      {iconUrl: 'assets/logos/android_studio.png', text: '&nbsp;Mobile'},
+      {iconUrl: 'assets/logos/webstorm.png', text: '&nbsp;Web&nbsp;&nbsp;'},
+      {iconUrl: 'assets/logos/intellij.png', text: '&nbsp;Others'}
+    ]
+  }
+
   primarySkills = [
     {
       title: 'Flutter',
@@ -30,7 +49,7 @@ export class ResumeHomeComponent implements OnInit {
       courses: [
         {title: 'Dart and Flutter The Complete Developer\'s Guide', by: 'Stephen Grider'}
       ],
-      hasLinkedProjects:true
+      hasLinkedProjects: true
     },
     {
       title: 'Dart',
@@ -58,9 +77,15 @@ export class ResumeHomeComponent implements OnInit {
       projects: [
         {title: 'ChessGame', gitLink: 'https://github.com/Mikiyas721/ChessGame.git'},
         {title: 'Library Management System', gitLink: 'https://github.com/Mikiyas721/LibraryManagment.git'},
-        {title: 'University Database Management System', gitLink: 'https://github.com/Mikiyas721/University-Database-Managment.git'},
+        {
+          title: 'University Database Management System',
+          gitLink: 'https://github.com/Mikiyas721/University-Database-Managment.git'
+        },
         {title: 'Math Assistant', gitLink: 'https://github.com/Mikiyas721/MathAssistant.git'},
-        {title: 'Dijkstra\'s Algorithm Implementation', gitLink: 'https://github.com/Mikiyas721/dijkstra-s-algorithm.git'},
+        {
+          title: 'Dijkstra\'s Algorithm Implementation',
+          gitLink: 'https://github.com/Mikiyas721/dijkstra-s-algorithm.git'
+        },
       ],
       courses: [
         {title: 'Object Oriented Programming', by: 'College Teacher'},
@@ -99,7 +124,10 @@ export class ResumeHomeComponent implements OnInit {
         'on a Raspberry Pi, this was our Thesis Project.',
       projects: [
         {title: 'Password Generator and Others', gitLink: 'https://github.com/Mikiyas721/Python-Exercises.git'},
-        {title: 'Smart Traffic Control System(College Thesis)', gitLink: 'https://github.com/Mikiyas721/thesis/tree/master/controller'},
+        {
+          title: 'Smart Traffic Control System(College Thesis)',
+          gitLink: 'https://github.com/Mikiyas721/thesis/tree/master/controller'
+        },
       ],
       courses: [
         {title: 'Learn Python Programming Masterclass', by: 'Tim Buchalka'},
@@ -130,7 +158,10 @@ export class ResumeHomeComponent implements OnInit {
       briefDescription: 'Using React I only made a simple website that displays data from an API, this was part of ' +
         'our thesis project.',
       projects: [
-        {title: 'Smart Traffic Control System Website', gitLink: 'https://github.com/Mikiyas721/thesis/tree/master/web'},
+        {
+          title: 'Smart Traffic Control System Website',
+          gitLink: 'https://github.com/Mikiyas721/thesis/tree/master/web'
+        },
       ],
       courses: [
         {title: 'React Front To Back', by: 'Brad Traversy'}
@@ -231,7 +262,10 @@ export class ResumeHomeComponent implements OnInit {
       briefDescription: 'I have recently started learning Kotlin to be able to use Jetpack Compose to build android native' +
         'applications.',
       projects: [
-        {title: 'Tic Tac Toe Game', gitLink: 'https://github.com/Mikiyas721/kotlin_practices/tree/master/Tic%20Tac%20Toe'},
+        {
+          title: 'Tic Tac Toe Game',
+          gitLink: 'https://github.com/Mikiyas721/kotlin_practices/tree/master/Tic%20Tac%20Toe'
+        },
       ],
       courses: [
         {title: 'Kotlin for Beginners Learn Programming With Kotlin', by: 'Peter Sommerhoff'}

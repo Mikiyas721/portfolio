@@ -4,8 +4,8 @@
   padding: 5px 100px 0 100px;
   color: white;
   align-items: center;
+  justify-content: space-between;
 }
-
 .avatar {
   border-radius: 100px;
   height: 60px;
@@ -14,10 +14,6 @@
 .title {
   color: white;
   margin: 0 0 5px 0;
-
-}
-.routes {
-  width: 300px;
 }
 
 .navBarLink {

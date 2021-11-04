@@ -1,14 +1,10 @@
-<nav class="navbar is-justify-content-space-between" role="navigation">
-
-  <!--<figure class="image is-64x64 is-rounded">
-    <img class="is-rounded avatar" src="assets/images/Profile_Picture.jpg" width="60">
-  </figure>-->
+<nav class="navbar" role="navigation">
 
   <div class="title">
     <p class="truncated">{{getTitle()}}</p>
   </div>
 
-  <div class="ui secondary pointing menu">
+  <div class="menu">
     <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===0}" routerLink="">Home</a>
     <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===1}" routerLink="portfolio">Portfolio</a>
     <a class="item navBarLink" [class]="{'is-underlined':getUnderlined()===2}" routerLink="resume">Resume</a>

@@ -1,77 +1,8 @@
 <div class="columns mb-4">
 
-  <div class="column is-2 mt-6 ml-5">
-
-      <div class="subtitle mb-2">
-        <p class="leftInfoTitle">Currently Exploring</p>
-      </div>
-
-      <div class="ml-3">
-        <div class="icon-text">
-          <p>
-              <span class="icon">
-              <img class="picture" src="assets/logos/angular.png">
-            </span>
-            Angular
-          </p>
-        </div>
-
-        <div class="icon-text">
-          <p>
-              <span class="icon">
-               <img class="picture" src="assets/logos/kotlin.png">
-            </span>
-            Kotlin
-          </p>
-        </div>
-
-        <div class="icon-text">
-          <p>
-              <span class="icon">
-              <img class="picture" src="assets/logos/jetpack.png">
-            </span>
-            JetPack
-          </p>
-        </div>
-      </div>
-
-      <div style="margin-top: 50px">
-
-        <div class="subtitle mb-2">
-          <p class="leftInfoTitle">Preferred IDEs</p>
-        </div>
-
-        <div class="ml-4">
-
-          <div class="icon-text">
-            <p>
-              <span class="icon">
-              <img class="picture" src="assets/logos/android_studio.png">
-            </span>
-              Mobile
-            </p>
-          </div>
-
-          <div class="icon-text">
-            <p>
-              <span class="icon">
-              <img class="picture" src="assets/logos/webstorm.png">
-            </span>
-              Web
-            </p>
-          </div>
-
-          <div class="icon-text">
-            <p style="margin-bottom: 5px">
-              <span class="icon">
-              <img class="picture" src="assets/logos/intellij.png">
-            </span>
-              Others
-            </p>
-          </div>
-
-        </div>
-      </div>
+  <div class="column is-2">
+    <app-iconed-text [labels]="exploring"></app-iconed-text>
+    <app-iconed-text [labels]="ides" style="margin-top: 50px"></app-iconed-text>
   </div>
 
 
@@ -86,25 +17,41 @@
       </div>
     </ng-container>
 
-    <ng-container *ngIf="supportiveSkills">
-      <div class="title">Supportive Skills</div>
-      <ng-container *ngFor="let supportive of supportiveSkills">
-        <app-skill-card (onCardClick)="onSkillClick(supportive)" [framework]="supportive"></app-skill-card>
-      </ng-container>
-    </ng-container>
-
-  </div>
-
-  <div class="column is-4 ml-2 mt-4">
-
-    <ng-container *ngIf="secondarySkills">
+    <div class="forSmall" *ngIf="secondarySkills">
       <div class="mb-4">
         <div class="title">Secondary Skills</div>
         <ng-container *ngFor="let secondary of secondarySkills">
           <app-skill-card (onCardClick)="onSkillClick(secondary)" [framework]="secondary"></app-skill-card>
         </ng-container>
       </div>
-    </ng-container>
+    </div>
+
+    <div class="forLarge" *ngIf="supportiveSkills">
+      <div class="title">Supportive Skills</div>
+      <ng-container *ngFor="let supportive of supportiveSkills">
+        <app-skill-card (onCardClick)="onSkillClick(supportive)" [framework]="supportive"></app-skill-card>
+      </ng-container>
+    </div>
+
+  </div>
+
+  <div class="column is-5 ml-2 mt-4">
+
+    <div class="forLarge" *ngIf="secondarySkills">
+      <div class="mb-4">
+        <div class="title">Secondary Skills</div>
+        <ng-container *ngFor="let secondary of secondarySkills">
+          <app-skill-card (onCardClick)="onSkillClick(secondary)" [framework]="secondary"></app-skill-card>
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="forSmall" *ngIf="supportiveSkills">
+      <div class="title">Supportive Skills</div>
+      <ng-container *ngFor="let supportive of supportiveSkills">
+        <app-skill-card (onCardClick)="onSkillClick(supportive)" [framework]="supportive"></app-skill-card>
+      </ng-container>
+    </div>
 
     <ng-container *ngIf="others">
       <div class="title">Others</div>
