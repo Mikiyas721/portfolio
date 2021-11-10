@@ -1,58 +1,72 @@
 <div class="container px-5">
 
-  <div class="mt-6">
+  <div class="card m-3 mb-6">
+    <div class="card-header p-5">
+      <p class="title">Application Overview</p>
+    </div>
+
     <div class="card-content">
-      <div class="carousel mb-6" id="carousel">
-        <div
-          style="height: 400px;padding-left: 100px"
-          class="item"
-          *ngFor="let url of data.carouselImages"
-        >
-          <img style="height: 400px" [src]="url" alt="">
+
+      <div>
+        <p class="overViewTitle">Description</p>
+        <p class="ml-4">{{data.content.description}}</p>
+      </div>
+
+      <div *ngIf="data.content.designPatterns">
+        <p class="overViewTitle">Architecture</p>
+        <div class="ml-4">
+          <ng-container *ngFor="let design of data.content.designPatterns">
+            <p [innerHTML]="design"></p>
+          </ng-container>
         </div>
       </div>
 
       <div>
-        <p>{{data.content.description}}
-        </p>
-
-        <div class="m-2">
-          <p class="subtitle mb-1">Applications</p>
-
-          <div class="columns ml-4">
-
-            <div class="column is-3">
-              <ng-container *ngFor="let app of data.content.applications">
-                <p>{{app.label}}</p>
-              </ng-container>
-            </div>
-
-            <div class="column frameWorkColumn">
-              <ng-container *ngFor="let app of data.content.applications">
-                <p class="is-italic">{{app.framework}}</p>
-              </ng-container>
-            </div>
-
-          </div>
-
-          <ng-container *ngFor="let design of data.content.designPatterns">
-            <p class="subtitle m-1" [innerHTML]="design"></p>
+        <p class="overViewTitle">Frameworks</p>
+        <div class="ml-4">
+          <ng-container *ngFor="let logo of data.frameWorksLogo">
+            <img style="width:48px" class="mr-3" [src]="logo">
           </ng-container>
         </div>
       </div>
+
+      <div>
+        <p class="overViewTitle">Explore project in detail</p>
+        <div class="ml-4 gitLink">
+          <a class="mt-2" target="_blank" [href]="data.githubLink">
+            {{data.githubLink}}
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="card-footer is-justify-content-end pr-5 pb-3">
-      <a class="mt-2 gitLink" target="_blank" [href]="data.githubLink">
-        {{data.githubLink}}
-      </a>
+
+    <div
+      *ngIf="data.downloadLink"
+      class="card-footer p-3 is-justify-content-end"
+    >
+        <button
+          (click)="downloadFile()"
+          class="button"
+          *ngIf="data.downloadLink"
+        >
+          <span class="material-icons">download</span>
+        </button>
     </div>
   </div>
 
+  <div
+    class="carousel"
+    *ngFor="let url of data.carouselImages"
+  >
+    <a class="carousel-item" href="#one!"><img [src]="url"></a>
+  </div>
 
-  <div><p class="myTitle">In-use</p></div>
+  <div style="height: 100px"></div>
+
+  <!--<div><p class="myTitle">In-use</p></div>
 
   <div class="m-6" style="text-align: center">
     <img class="picture" src="/assets/gifs/giphy.webp">
-  </div>
+  </div>-->
 
 </div>

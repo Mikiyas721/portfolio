@@ -43,13 +43,9 @@
         <div *ngIf="data.courses">
           <p class="subtitle mb-2 mt-3">Course(s)</p>
           <ng-container *ngFor="let course of data.courses">
-            <div class="ml-4">
-              <div>
+            <div class="ml-4 mt-2">
                 {{course.title}}
-              </div>
-              <div class="ml-2" style="font-style: italic">
-                by: - {{course.by}}
-              </div>
+                <span class="by" [style]="{backgroundColor:getRandomColor()}">{{course.by}}</span>
             </div>
           </ng-container>
         </div>

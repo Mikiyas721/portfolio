@@ -42,7 +42,10 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/sales_tracker/4.jpg',
         'assets/carousel_images/mobile/sales_tracker/5.jpg',
         'assets/carousel_images/mobile/sales_tracker/6.jpg',
-      ]
+        'assets/carousel_images/mobile/sales_tracker/7.jpg',
+        'assets/carousel_images/mobile/sales_tracker/8.jpg',
+      ],
+      slideCount:3
     },
     {
       title: "Rick and Morty",
@@ -72,7 +75,20 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/rick_morty/4.jpg',
         'assets/carousel_images/mobile/rick_morty/5.jpg',
         'assets/carousel_images/mobile/rick_morty/6.jpg',
-      ]
+        'assets/carousel_images/mobile/rick_morty/7.jpg',
+        'assets/carousel_images/mobile/rick_morty/8.jpg',
+        'assets/carousel_images/mobile/rick_morty/9.jpg',
+        'assets/carousel_images/mobile/rick_morty/10.jpg',
+        'assets/carousel_images/mobile/rick_morty/11.jpg',
+        'assets/carousel_images/mobile/rick_morty/12.jpg',
+        'assets/carousel_images/mobile/rick_morty/13.jpg',
+        'assets/carousel_images/mobile/rick_morty/14.jpg',
+        'assets/carousel_images/mobile/rick_morty/15.jpg',
+        'assets/carousel_images/mobile/rick_morty/16.jpg',
+        'assets/carousel_images/mobile/rick_morty/17.jpg',
+        'assets/carousel_images/mobile/rick_morty/18.jpg',
+      ],
+      slideCount:3
     },
     {
       title: "Todo",
@@ -100,7 +116,12 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/todo/4.jpg',
         'assets/carousel_images/mobile/todo/5.jpg',
         'assets/carousel_images/mobile/todo/6.jpg',
-      ]
+        'assets/carousel_images/mobile/todo/7.jpg',
+        'assets/carousel_images/mobile/todo/8.jpg',
+        'assets/carousel_images/mobile/todo/9.jpg',
+        'assets/carousel_images/mobile/todo/10.jpg',
+      ],
+      slideCount:3
     },
     {
       title: "Recipe",
@@ -127,7 +148,11 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/recipe/4.jpg',
         'assets/carousel_images/mobile/recipe/5.jpg',
         'assets/carousel_images/mobile/recipe/6.jpg',
-      ]
+        'assets/carousel_images/mobile/recipe/7.jpg',
+        'assets/carousel_images/mobile/recipe/8.jpg',
+        'assets/carousel_images/mobile/recipe/9.jpg',
+      ],
+      slideCount:3
     },
     {
       title: "Chess",
@@ -156,8 +181,59 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/chess/4.jpg',
         'assets/carousel_images/mobile/chess/5.jpg',
         'assets/carousel_images/mobile/chess/6.jpg',
-      ]
-    }
+        'assets/carousel_images/mobile/chess/7.jpg',
+        'assets/carousel_images/mobile/chess/8.jpg',
+        'assets/carousel_images/mobile/chess/9.jpg',
+        'assets/carousel_images/mobile/chess/10.jpg',
+        'assets/carousel_images/mobile/chess/11.jpg',
+        'assets/carousel_images/mobile/chess/12.jpg',
+        'assets/carousel_images/mobile/chess/13.jpg',
+        'assets/carousel_images/mobile/chess/14.jpg',
+        'assets/carousel_images/mobile/chess/15.jpg',
+        'assets/carousel_images/mobile/chess/16.jpg',
+        'assets/carousel_images/mobile/chess/17.jpg',
+      ],
+      slideCount:3
+    },
+    {
+      title: "Media",
+      githubLink: "https://github.com/Mikiyas721/vlc.git",
+      content: {
+        description: 'This application partially combines the use of a Gallery and a Media Player. It previews ' +
+          'all the images and videos with in the device with in categories. Besides video files, it also plays audio ' +
+          'files. The user is also able to navigate through the device storage to access a specific file. Playlist and history ' +
+          'record features are also included local storage.',
+        applications: [
+          {label: 'Mobile Application', framework: 'Flutter'},
+        ],
+        designPatterns: [
+          'BLOC Pattern'
+        ]
+      },
+      frameWorksLogo: [
+        'assets/logos/flutter.png',
+      ],
+      carouselImages: [
+        'assets/carousel_images/mobile/media/1.jpg',
+        'assets/carousel_images/mobile/media/2.jpg',
+        'assets/carousel_images/mobile/media/3.jpg',
+        'assets/carousel_images/mobile/media/4.jpg',
+        'assets/carousel_images/mobile/media/5.jpg',
+        'assets/carousel_images/mobile/media/6.jpg',
+        'assets/carousel_images/mobile/media/7.jpg',
+        'assets/carousel_images/mobile/media/8.jpg',
+        'assets/carousel_images/mobile/media/9.jpg',
+        'assets/carousel_images/mobile/media/10.jpg',
+        'assets/carousel_images/mobile/media/11.jpg',
+        'assets/carousel_images/mobile/media/12.jpg',
+        'assets/carousel_images/mobile/media/13.jpg',
+        'assets/carousel_images/mobile/media/14.jpg',
+        'assets/carousel_images/mobile/media/15.jpg',
+        'assets/carousel_images/mobile/media/16.jpg',
+        'assets/carousel_images/mobile/media/17.jpg',
+      ],
+      slideCount:3
+    },
   ]
 
   websitePortfolios = [
@@ -171,20 +247,22 @@ export class PortfolioHomeComponent implements OnInit {
         applications: [
           {label: 'Website', framework: 'Vue.Js'},
         ],
-        designPatterns: [],
       },
       frameWorksLogo: [
         'assets/logos/node.png',
         'assets/logos/vue.png',
       ],
       carouselImages: [
-        'assets/carousel_images/website/tolo/1.jpg',
-        'assets/carousel_images/website/tolo/2.jpg',
-        'assets/carousel_images/website/tolo/3.jpg',
-        'assets/carousel_images/website/tolo/4.jpg',
-        'assets/carousel_images/website/tolo/5.jpg',
-        'assets/carousel_images/website/tolo/6.jpg',
-      ]
+        'assets/carousel_images/website/tolo/1.png',
+        'assets/carousel_images/website/tolo/2.png',
+        'assets/carousel_images/website/tolo/3.png',
+        'assets/carousel_images/website/tolo/4.png',
+        'assets/carousel_images/website/tolo/5.png',
+        'assets/carousel_images/website/tolo/6.png',
+        'assets/carousel_images/website/tolo/7.png',
+        'assets/carousel_images/website/tolo/8.png',
+      ],
+      slideCount:1
     },
     {
       title: "Supermarket Management",
@@ -208,13 +286,15 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/logos/node.png',
       ],
       carouselImages: [
-        'assets/carousel_images/website/sm/1.jpg',
-        'assets/carousel_images/website/sm/2.jpg',
-        'assets/carousel_images/website/sm/3.jpg',
-        'assets/carousel_images/website/sm/4.jpg',
-        'assets/carousel_images/website/sm/5.jpg',
-        'assets/carousel_images/website/sm/6.jpg',
-      ]
+        'assets/carousel_images/website/sm/1.png',
+        'assets/carousel_images/website/sm/2.png',
+        'assets/carousel_images/website/sm/3.png',
+        'assets/carousel_images/website/sm/4.png',
+        'assets/carousel_images/website/sm/5.png',
+        'assets/carousel_images/website/sm/6.png',
+        'assets/carousel_images/website/sm/6.JPG',
+      ],
+      slideCount:1
     }
   ]
 
@@ -229,12 +309,10 @@ export class PortfolioHomeComponent implements OnInit {
         applications: [
           {label: 'Bot', framework: 'Node.Js (Telegraf.Js)'},
         ],
-        designPatterns: []
       },
       frameWorksLogo: [
         'assets/logos/node.png',
         'assets/logos/mongodb.png',
-
       ],
       carouselImages: [
         'assets/carousel_images/bot/stack_overflow/1.jpg',
@@ -243,7 +321,14 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/bot/stack_overflow/4.jpg',
         'assets/carousel_images/bot/stack_overflow/5.jpg',
         'assets/carousel_images/bot/stack_overflow/6.jpg',
+        'assets/carousel_images/bot/stack_overflow/7.jpg',
+        'assets/carousel_images/bot/stack_overflow/8.jpg',
+        'assets/carousel_images/bot/stack_overflow/9.jpg',
+        'assets/carousel_images/bot/stack_overflow/10.jpg',
+        'assets/carousel_images/bot/stack_overflow/11.jpg',
+        'assets/carousel_images/bot/stack_overflow/12.jpg',
       ],
+      slideCount:3,
       telegramBotLink: {telegramId: '@Stackoverflowrealbot', link: 'https://t.me/Stackoverflowrealbot'}
     },
     {
@@ -252,7 +337,7 @@ export class PortfolioHomeComponent implements OnInit {
       content: {
         description: "This bot uses a third party API that provides various questions of different categories. The " +
           "bot uses this API to give the Bot user with a question and answer session that keeps scores in a MongoDB" +
-          "Database. ",
+          "Database.",
         applications: [
           {label: 'Bot', framework: 'Node.Js (Telegraf.Js)'},
         ],
@@ -271,7 +356,14 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/bot/questions/4.jpg',
         'assets/carousel_images/bot/questions/5.jpg',
         'assets/carousel_images/bot/questions/6.jpg',
+        'assets/carousel_images/bot/questions/7.jpg',
+        'assets/carousel_images/bot/questions/8.jpg',
+        'assets/carousel_images/bot/questions/9.jpg',
+        'assets/carousel_images/bot/questions/10.jpg',
+        'assets/carousel_images/bot/questions/11.jpg',
+        'assets/carousel_images/bot/questions/12.jpg',
       ],
+      slideCount:3,
       telegramBotLink: {telegramId: '@questionrealbot', link: 'https://t.me/questionrealbot'}
     }
   ]

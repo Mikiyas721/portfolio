@@ -70,7 +70,7 @@ export class ResumeHomeComponent implements OnInit {
       title: 'Java',
       iconUrl: '/assets/logos/java.png',
       engagement: '1 year',
-      briefDescription: 'This programming language was the starting point of my programming journey. Even though I ' +
+      briefDescription: 'This programming language was the starting point of my programming journey. Even though ' +
         'C++ was my actual first programming language, I started to get clear understanding of the concepts with Java. ' +
         'I worked on a couple of desktop applications using Java Swing and Javafx. In addition to taking a course ' +
         '\'Object Oriented Programming\' in collage, I worked on other projects personally.',

@@ -23,5 +23,8 @@ export class SkillDetailsModalComponent implements OnInit, OnDestroy {
   closeModal() {
     this.closeEmitter.emit()
   }
+  getRandomColor(){
+    return `rgb(${50+Math.random()*(200-50)},${50+Math.random()*(225-50)},${50+Math.random()*(255-50)})`
+  }
 
 }

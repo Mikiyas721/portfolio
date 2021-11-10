@@ -14,4 +14,10 @@
   font-size: medium;
   margin-bottom: 5px;
 }
+.by{
+  color: white;
+  padding: 3px 8px 3px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
 

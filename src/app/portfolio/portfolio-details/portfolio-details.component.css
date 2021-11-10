@@ -5,10 +5,19 @@
   margin: 25px 0 25px 0;
 }
 .gitLink{
-  width: 151px;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.overViewTitle{
+  margin: 10px 0 5px 0;
+  font-size: 20px;
+}
+.button{
+  background-color: #2FBE84;
+  color: white;
+  border-radius: 20px;
 }
 @media only screen and (max-width: 800px) {
   .frameWorkColumn {
