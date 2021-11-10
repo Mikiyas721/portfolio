@@ -1,3 +1,5 @@
+@import "materialize-css/dist/css/materialize.css";
+
 .myTitle{
   font-family: Montserrat;
   font-size: 25px;
@@ -19,6 +21,21 @@
   color: white;
   border-radius: 20px;
 }
+.carousel{
+  vertical-align: top;
+}
+.carouselTitle{
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 70px 0 0 0;
+}
+.carouselSubTitle{
+  font-family: "Berlin Sans FB";
+  font-size: 18px;
+  color: grey;
+}
+
 @media only screen and (max-width: 800px) {
   .frameWorkColumn {
     display: none;

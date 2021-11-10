@@ -1,13 +1,19 @@
-import {Component} from '@angular/core';
+import {Component, OnChanges, SimpleChanges} from '@angular/core';
 import {Router} from '@angular/router'
+import {SharedService} from "./shared/shared.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  constructor(private router: Router) {
+export class AppComponent implements OnChanges {
+  constructor(private router: Router, private shared:SharedService) {
+    window.onload = () => {
+      if(this.router.url === "/portfolio/portfolioDetails"&&shared.selectedPortfolio===undefined){
+        this.router.navigate(['/portfolio'], {replaceUrl:true})
+      }
+    }
   }
 
   getUnderlined(): number {
@@ -23,5 +29,9 @@ export class AppComponent {
     else if (route == 1) return 'Portfolio'
     else if (route == 2) return 'Curriculum Vitae'
     else return 'Project'
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.router.url)
   }
 }

@@ -1,6 +1,6 @@
-<div class="container px-5">
+<div class="px-5">
 
-  <div class="card m-3 mb-6">
+  <div class="card mx-3 mt-3">
     <div class="card-header p-5">
       <p class="title">Application Overview</p>
     </div>
@@ -44,21 +44,30 @@
       *ngIf="data.downloadLink"
       class="card-footer p-3 is-justify-content-end"
     >
-        <button
-          (click)="downloadFile()"
-          class="button"
-          *ngIf="data.downloadLink"
-        >
-          <span class="material-icons">download</span>
-        </button>
+      <button
+        (click)="downloadFile()"
+        class="button"
+        *ngIf="data.downloadLink"
+      >
+        <span class="material-icons">download</span>
+      </button>
     </div>
   </div>
 
   <div
-    class="carousel"
-    *ngFor="let url of data.carouselImages"
+    [class]="data.slideCount==1?'carousel carousel-slider':'carousel'"
+    style="height: 670px"
   >
-    <a class="carousel-item" href="#one!"><img [src]="url"></a>
+    <div
+      style="text-align: center"
+      *ngIf="data.slideCount==5"
+    >
+      <p class="carouselTitle">Take a closer look</p>
+      <p class="carouselSubTitle">Navigate through the screenshot of {{data.title}}</p>
+    </div>
+    <ng-container *ngFor="let url of data.carouselImages">
+      <a class="carousel-item"><img [src]="url"></a>
+    </ng-container>
   </div>
 
   <div style="height: 100px"></div>

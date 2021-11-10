@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {SharedService} from "../../shared/shared.service";
 
 @Component({
@@ -45,7 +45,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/sales_tracker/7.jpg',
         'assets/carousel_images/mobile/sales_tracker/8.jpg',
       ],
-      slideCount:3
+      slideCount:5
     },
     {
       title: "Rick and Morty",
@@ -88,7 +88,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/rick_morty/17.jpg',
         'assets/carousel_images/mobile/rick_morty/18.jpg',
       ],
-      slideCount:3
+      slideCount:5
     },
     {
       title: "Todo",
@@ -121,7 +121,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/todo/9.jpg',
         'assets/carousel_images/mobile/todo/10.jpg',
       ],
-      slideCount:3
+      slideCount:5
     },
     {
       title: "Recipe",
@@ -152,7 +152,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/recipe/8.jpg',
         'assets/carousel_images/mobile/recipe/9.jpg',
       ],
-      slideCount:3
+      slideCount:5
     },
     {
       title: "Chess",
@@ -193,7 +193,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/chess/16.jpg',
         'assets/carousel_images/mobile/chess/17.jpg',
       ],
-      slideCount:3
+      slideCount:5
     },
     {
       title: "Media",
@@ -232,7 +232,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/mobile/media/16.jpg',
         'assets/carousel_images/mobile/media/17.jpg',
       ],
-      slideCount:3
+      slideCount:5
     },
   ]
 
@@ -292,7 +292,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/website/sm/4.png',
         'assets/carousel_images/website/sm/5.png',
         'assets/carousel_images/website/sm/6.png',
-        'assets/carousel_images/website/sm/6.JPG',
+        'assets/carousel_images/website/sm/7.JPG',
       ],
       slideCount:1
     }
@@ -328,7 +328,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/bot/stack_overflow/11.jpg',
         'assets/carousel_images/bot/stack_overflow/12.jpg',
       ],
-      slideCount:3,
+      slideCount:5,
       telegramBotLink: {telegramId: '@Stackoverflowrealbot', link: 'https://t.me/Stackoverflowrealbot'}
     },
     {
@@ -363,7 +363,7 @@ export class PortfolioHomeComponent implements OnInit {
         'assets/carousel_images/bot/questions/11.jpg',
         'assets/carousel_images/bot/questions/12.jpg',
       ],
-      slideCount:3,
+      slideCount:5,
       telegramBotLink: {telegramId: '@questionrealbot', link: 'https://t.me/questionrealbot'}
     }
   ]
@@ -372,7 +372,6 @@ export class PortfolioHomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
   }
 
   onPortfolioCardClick(object: any) {
@@ -383,4 +382,5 @@ export class PortfolioHomeComponent implements OnInit {
     event.preventDefault()
     window.location.hash = `#${hash}`
   }
+
 }
