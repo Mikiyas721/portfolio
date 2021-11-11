@@ -3,7 +3,7 @@
 
   <div class="columns">
 
-    <div class="column is-3 conditionallyCentered" >
+    <div class="column is-3 conditionallyCentered">
       <img class="picture" src="/assets/me.jpg">
     </div>
 
@@ -44,10 +44,11 @@
       freelance jobs while starting his own business.</p>
   </div>
 
-  <div><p class="myTitle">Recents</p></div>
-
-  <div class="mb-6" style="text-align: center">
-    <img class="picture" src="/assets/gifs/giphy.webp">
+  <div>
+    <p class="myTitle">Recents</p>
+    <ng-container *ngFor="let recent of recents">
+      <app-recent-project-card [recent]="recent"></app-recent-project-card>
+    </ng-container>
   </div>
 
 </div>
@@ -91,7 +92,7 @@
             <span class="icon mr-2">
                <span class="material-icons">location_on</span>
             </span>
-              Addis Ababa, Ethiopia
+            Addis Ababa, Ethiopia
           </div>
 
         </div>

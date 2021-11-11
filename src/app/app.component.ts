@@ -7,13 +7,14 @@ import {SharedService} from "./shared/shared.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnChanges {
-  constructor(private router: Router, private shared:SharedService) {
+export class AppComponent {
+  constructor(private router: Router, private shared: SharedService) {
     window.onload = () => {
-      if(this.router.url === "/portfolio/portfolioDetails"&&shared.selectedPortfolio===undefined){
-        this.router.navigate(['/portfolio'], {replaceUrl:true})
+      if (this.router.url === "/portfolio/portfolioDetails" && shared.selectedPortfolio === undefined) {
+        this.router.navigate(['/portfolio'], {replaceUrl: true})
       }
     }
+    if (window.innerWidth < 1025) alert("Please open with a desktop for a better preview.")
   }
 
   getUnderlined(): number {
@@ -31,7 +32,4 @@ export class AppComponent implements OnChanges {
     else return 'Project'
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.router.url)
-  }
 }

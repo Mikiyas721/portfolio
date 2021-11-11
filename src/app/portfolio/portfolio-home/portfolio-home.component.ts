@@ -104,7 +104,7 @@ export class PortfolioHomeComponent implements OnInit {
           'BLOC Pattern'
         ]
       },
-      downloadLink: {title: 'Todo.apk', url: '/assets/apks/Todo.apk'},
+      /*downloadLink: {title: 'Todo.apk', url: '/assets/apks/Todo.apk'},*/
       frameWorksLogo: [
         'assets/logos/flutter.png',
         'assets/logos/hasura.png'
@@ -135,8 +135,8 @@ export class PortfolioHomeComponent implements OnInit {
         designPatterns: [
           'BLOC Pattern'
         ]
-      },
-      downloadLink: {title: 'Recipe.apk', url: '/assets/apks/Recipe.apk'},
+      },/*
+      downloadLink: {title: 'Recipe.apk', url: '/assets/apks/Recipe.apk'},*/
       frameWorksLogo: [
         'assets/logos/flutter.png',
         'assets/logos/hasura.png',
@@ -172,7 +172,6 @@ export class PortfolioHomeComponent implements OnInit {
       frameWorksLogo: [
         'assets/logos/flutter.png',
         'assets/logos/sqlite.jpg',
-
       ],
       carouselImages: [
         'assets/carousel_images/mobile/chess/1.jpg',

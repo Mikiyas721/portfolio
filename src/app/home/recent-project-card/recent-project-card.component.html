@@ -1,0 +1,39 @@
+<div [class]="recent.isLeft?'recentProjectCardWhite':'recentProjectCardBrokenWhite'">
+
+  <div class="columns" *ngIf="recent.isLeft">
+    <div class="column imageColumn is-6">
+      <video style="height: 500px" autoplay loop [src]="recent.videoUrl"></video>
+    </div>
+
+    <div class="column">
+      <div>
+        <p class="myTitle">{{recent.title}}</p>
+        <p align="justify">{{recent.description}}</p>
+      </div>
+      <div style="text-align: end;margin-top: 15px">
+        <ng-container *ngFor="let logo of recent.frameWorksLogo">
+          <img style="width: 64px;margin-right: 10px" [src]="logo">
+        </ng-container>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="columns" *ngIf="!recent.isLeft">
+    <div class="column">
+      <p class="myTitle">{{recent.title}}</p>
+      <p align="justify">{{recent.description}}</p>
+      <div style="align-self: end;margin-top: 15px">
+        <ng-container *ngFor="let logo of recent.frameWorksLogo">
+          <img style="width: 64px;margin-right: 10px" [src]="logo">
+        </ng-container>
+      </div>
+
+    </div>
+
+    <div class="column is-6" style="padding-left: 17%">
+      <video style="height: 500px" autoplay loop [src]="recent.videoUrl"></video>
+    </div>
+  </div>
+
+</div>
